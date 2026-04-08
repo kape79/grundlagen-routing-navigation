@@ -3,11 +3,9 @@ export default function ProductDetailsLayout( {
 } : {
     children: React.ReactNode;
 }) {
-    return (
-        <>
-            {children}
-            <h2>Featured products</h2>
-        </>
-    );
+    return <>
+        {children}
+        <h2>Featured products</h2>
+    </>;
 
 }
