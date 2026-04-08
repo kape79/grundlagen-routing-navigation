@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Next.js Tutorial",
+  title: {
+    default: "Next.js", //automatically use default title when nothing is given 
+    template: "%s | Hochschule Demo", //consistent prefixes and postfixes (| = alt+7 mac)
+  },
   description: "Learning Next.js step by step",
 };
 
